@@ -1,0 +1,15 @@
+<div id="search-component">
+    <label for="search-box">Hero Search</label>
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" /> 
+    <!-- hash symbol, #, to declare a template variable,hash symbol, #, to declare a template variable -->
+  
+    <ul class="search-result">
+        <!-- $ is a convention that indicates heroes$ is an Observable, not an array. And *ngFor can't do anything with an Observable
+        identifies Angular's AsyncPipe and subscribes to an Observable automatically-->
+      <li *ngFor="let hero of heroes$ | async" > 
+        <a routerLink="/detail/{{hero.id}}">
+          {{hero.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
