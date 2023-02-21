@@ -13,7 +13,7 @@ export class HeroService {
 
   private heroesUrl = 'api/heroes';  // URL to web api
 
-  constructor(private http: HttpClient,private messageService: MessageService) { } //Angular injects the singleton MessageService into that property when it creates the HeroService.
+  constructor(private http: HttpClient, private messageService: MessageService) { } //Angular injects the singleton MessageService into that property when it creates the HeroService.
   /**
    * asynchronous signature
    * @returns mock hero as an Observable

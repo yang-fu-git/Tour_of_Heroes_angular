@@ -15,4 +15,4 @@ export class MessageService {
     this.messages = [];
   }
 }
-// instead of write the add and clear message method in the message.component because these are used in 
+// singleton services : only one instance exists in an application

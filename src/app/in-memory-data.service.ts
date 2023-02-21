@@ -10,7 +10,7 @@ export class InMemoryDataService {
   constructor() { }
   createDb() {
     const heroes = [
-      { id: 12, name: 'Dr. Nice' },
+      { id: 12, name: 'Hulk' },
       { id: 13, name: 'Bombasto' },
       { id: 14, name: 'Celeritas' },
       { id: 15, name: 'Magneta' },
